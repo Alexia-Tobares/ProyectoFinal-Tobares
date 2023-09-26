@@ -1,24 +1,31 @@
 import './navbar.css'
-import {AppBar, Button, Toolbar} from '@mui/material';
+import {AppBar, Toolbar} from '@mui/material';
 import SS from '../img/SS.jpg' 
 import CartWidget from '../CartWidget/CartWidget.jsx';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () =>{
     return(<AppBar>
         <Toolbar className='navbar'  sx={{display: 'flex', justifyContent: 'space-around'}}>
-            <img src={SS}></img> 
-            <Button sx={{color: '#FDF0D5'}}>
+            <a href="/"><img src={SS}></img> </a>
+            <NavLink sx={{color: '#FDF0D5'}} to="/">
                 Home
-            </Button>
-            <Button sx={{color: '#FDF0D5'}}>
+            </NavLink>
+            <NavLink sx={{color: '#FDF0D5'}} to="/productos">
+                Productos
+            </NavLink>
+            <NavLink sx={{color: '#FDF0D5'}} to="/categorias">
+                Categorias
+            </NavLink>
+            <NavLink sx={{color:'#FDF0D5'}} to="/categoria/ropa">
                 Ropa
-            </Button>
-            <Button sx={{color: '#FDF0D5'}}>
-                Suplementos
-            </Button>
-            <Button sx={{color: '#FDF0D5'}}>
-                Conocenos
-            </Button>
+            </NavLink>
+            <NavLink sx={{color:'#FDF0D5'}} to="/categoria/calzado">
+                Calzado
+            </NavLink>
+            <NavLink sx={{color:'#FDF0D5'}} to="/categoria/suplementos">
+               Suplementos
+            </NavLink>
             <CartWidget className='cart' />
         </Toolbar>
     </AppBar>);

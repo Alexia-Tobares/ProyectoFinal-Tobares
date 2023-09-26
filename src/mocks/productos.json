@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/680555-1000-1000?v=1782076776&width=1000&height=1000&aspect=true",
+        "tittle": "Top deportivo gris",
+        "price": 400.50,
+        "category": "ropa",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 2,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/212568-1000-1000?v=1782130189&width=1000&height=1000&aspect=true",
+        "tittle": "Conjunto de yoga ",
+        "price": 1025.50,
+        "category": "ropa",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 3,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/158671-1000-1000?v=1781900094&width=1000&height=1000&aspect=true",
+        "tittle": "Buzo con capucha rosa",
+        "price": 2010.00,
+        "category": "ropa",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 4,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/680649-1000-1000?v=1782058906&width=1000&height=1000&aspect=true",
+        "tittle": "Campera de running",
+        "price": 3050.50,
+        "category": "ropa",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 5,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/680837-1000-1000?v=1782098088&width=1000&height=1000&aspect=true",
+        "tittle": "Short de running",
+        "price": 1800.00,
+        "category": "ropa",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 6,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/658185-1000-1000?v=1782154504&width=1000&height=1000&aspect=true",
+        "tittle": "Botines de pasto sintético",
+        "price": 30000.50,
+        "category": "calzado",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 7,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/702701-1000-1000?v=1782154602&width=1000&height=1000&aspect=true",
+        "tittle": "Zapatillas de running",
+        "price": 20000.00,
+        "category": "calzado",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 8,
+        "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/bdad62b768604f01bd6daf4301325e75_9366/zapatillas-ultraboost-1.0.jpg",
+        "tittle": "Zapatillas training magenta",
+        "price": 12000.50,
+        "category": "calzado",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 9,
+        "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/477cd2d3ad674cae9427ae3701349eab_9366/Zapatillas_Ultraboost_5_DNA_Sportswear_Negro_GV8743_01_standard.jpg",
+        "tittle": "Zapatillas training negro",
+        "price": 25000.00,
+        "category": "calzado",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 10,
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/630074-1000-1000?v=1782132477&width=1000&height=1000&aspect=true",
+        "tittle": "Zapatillas training rosa",
+        "price": 14000.50,
+        "category": "calzado",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 11,
+        "image": "https://www.demusculos.com/shop/2673-home_default/creatina-300-grs-ena.jpg",
+        "tittle": "Creatina micronizada 300 gr",
+        "price": 7000.00,
+        "category": "suplementos",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 12,
+        "image": "https://www.demusculos.com/shop/849-home_default/x2-whey-protein-star-nutrition-6lb.jpg",
+        "tittle": "Whey protein 908 gr",
+        "price": 20000.50,
+        "category": "suplementos",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 13,
+        "image": "https://www.demusculos.com/shop/1314-home_default/quemador-tx3-black-cuts.jpg",
+        "tittle": "Quemador de grasa x60",
+        "price": 5000.50,
+        "category": "suplementos",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 14,
+        "image": "https://www.demusculos.com/shop/1360-home_default/woman-vital.jpg",
+        "tittle": "Colágeno hidrolizado 454 gr",
+        "price": 18000.50,
+        "category": "suplementos",
+        "itHasDues": true,
+        "isAnOffer": false
+    },
+    {
+        "id": 15,
+        "image": "https://www.demusculos.com/shop/2338-home_default/multi-vitamin-daily-formula-gentech.jpg",
+        "tittle": "Vitaminas y minerales x60",
+        "price": 10000.00,
+        "category": "suplementos",
+        "itHasDues": true,
+        "isAnOffer": false
+    }
+]

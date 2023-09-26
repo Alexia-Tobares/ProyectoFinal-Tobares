@@ -1,3 +1,12 @@
 .navbar{
     background-color: #AF5B5B;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:-webkit-any-link {
+    color: #fdf0d5;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
 }
