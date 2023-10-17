@@ -3,6 +3,7 @@ import useAsyncMock from "../../hooks/useAsyncMock"
 import productos from "../../mocks/productos.json"
 import ProductDetail from "./ProductDetail"
 
+
 const ProductList= ()=>{
     const{data, loading} = useAsyncMock(productos)
     if(loading) return <CircularProgress/>

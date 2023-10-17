@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ProductList from './components/productos/ProductList'
 import CategoriesProductList from './components/categorias/CategoriesProductList'
 
+
 function App() {
 const greeting = '¡Bienvenido/a a Stay Strong!'
   return ( 

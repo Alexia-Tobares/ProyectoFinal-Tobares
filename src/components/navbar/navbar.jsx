@@ -4,7 +4,9 @@ import SS from '../img/SS.jpg'
 import CartWidget from '../CartWidget/CartWidget.jsx';
 import { NavLink } from 'react-router-dom';
 
+
 const Navbar = () =>{
+
     return(<AppBar>
         <Toolbar className='navbar'  sx={{display: 'flex', justifyContent: 'space-around'}}>
             <a href="/"><img src={SS}></img> </a>
@@ -27,6 +29,7 @@ const Navbar = () =>{
                Suplementos
             </NavLink>
             <CartWidget className='cart' />
+            
         </Toolbar>
     </AppBar>);
 }
