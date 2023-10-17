@@ -20,7 +20,7 @@ const ProductDetail = ({producto, children})=>{
         </Card>
     </Grid>
      {
-        isSelected && <ProductInfo pruduct = {producto} open={isSelected} setOpen={setIsSelected}/>
+        isSelected && <ProductInfo producto = {producto} open={isSelected} setOpen={setIsSelected}/>
     } 
     
     </>)

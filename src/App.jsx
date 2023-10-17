@@ -8,21 +8,27 @@ import Categorias from './components/categorias/Categorias'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ProductList from './components/productos/ProductList'
 import CategoriesProductList from './components/categorias/CategoriesProductList'
+import Cart from './components/Cart/Cart'
+import CartProvider from './context/CartContext'
 
 
 function App() {
 const greeting = '¡Bienvenido/a a Stay Strong!'
   return ( 
     <>
-    <Router>
-      <Navbar/> 
-      <Routes>
-        <Route exact path="/" element={<ItemListContainer greeting={greeting}/>}/>
-        <Route exact path="/productos" element={<ProductList/>}/>
-        <Route exact path="/categorias" element={<Categorias/>}/>
-        <Route exact path="/categoria/:categoriaId" element={<CategoriesProductList/>}/>
-      </Routes>
-    </Router>
+    <CartProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<ItemListContainer greeting={greeting} />} />
+            <Route exact path="/productos" element={<ProductList />} />
+            <Route exact path="/categorias" element={<Categorias />} />
+            <Route exact path="/categoria/:categoriaId" element={<CategoriesProductList />} />
+            <Route exact path="/cart" element={<Cart />} />
+          </Routes>
+        </Router>
+    </CartProvider>
+    
       
       
       

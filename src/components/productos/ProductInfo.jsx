@@ -3,9 +3,8 @@ import PaymentIcon from "@mui/icons-material/Payment"
 import ItemCount from "../common/ItemCount";
 import { useContext, useState } from "react";
 import { useCartContext } from "../../context/CartContext";
-
 const ProductInfo = ({ producto, open, setOpen }) => {
-    const { id, image, title, price, isAnOffer, itHasDues, stock } = producto
+    const { id, image, tittle, price, isAnOffer, itHasDues, stock } = producto
     const { addToCart } = useCartContext()
     const [quantityInCart, setQuantityInCart] = useState(0);
 
@@ -16,11 +15,12 @@ const ProductInfo = ({ producto, open, setOpen }) => {
 
     const handleAddToCart = (count) => {
 
+
         setQuantityInCart(count);
         console.log('agregado', count)
         if (count > 0) {
             addToCart({
-                id, title, image, price, quantity: count
+                id, tittle, image, price, quantity: count
             })
         }
     };
@@ -28,9 +28,9 @@ const ProductInfo = ({ producto, open, setOpen }) => {
 
     return (<>
         <Modal open={true} onClose={handleClose}>
-            <div className="modal-content">
-                <img style={{ width: "70%" }} src={image} />
-                <Typography variant="h4">{title}</Typography>
+            <div className="modal-content" style={{display:"flex", flexDirection:"column", alignItems:"center", backgroundColor:"white"}}>
+                <img style={{ width: "25%"}} src={image} />
+                <Typography variant="h4">{tittle}</Typography>
                 <Typography variant="h6" color="primary"> ${price.toFixed(2)}</Typography>
                 <Typography>stock: {stock}</Typography>
                 <div className="modal-scroll-content">
@@ -38,6 +38,7 @@ const ProductInfo = ({ producto, open, setOpen }) => {
                         {
                             itHasDues && (<>
                                 <PaymentIcon /> Hasta tres cuotas sin interés </>)
+
                         }
                     </Typography>
                     <ItemCount stock={stock} initial={quantityInCart} onAdd={handleAddToCart} />
@@ -46,4 +47,5 @@ const ProductInfo = ({ producto, open, setOpen }) => {
         </Modal>
     </>);
 }
+
 export default ProductInfo;
