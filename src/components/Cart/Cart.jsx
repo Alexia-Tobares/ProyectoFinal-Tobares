@@ -15,7 +15,7 @@ const Cart = () => {
     const { cart } = useCartContext();
 
     return (
-        <div className="container">
+        <div className="container" style={{marginTop:"150px"}}>
             <Paper elevation={3}>
                 <Typography variant="h6" component="div" align="center" sx={{ p: 2 }}>
                     Cart
@@ -39,7 +39,7 @@ const Cart = () => {
                                 {cart.items.map((item) => (
                                     <TableRow key={item.id}>
                                         <TableCell><img style={{ width: "10%", height: "10%" }} src={item.image} alt={item.title} /></TableCell>
-                                        <TableCell>{item.title}</TableCell>
+                                        <TableCell>{item.tittle}  x{item.quantity}</TableCell>
                                         <TableCell>${item.price}</TableCell>
                                         <TableCell>${item.price * item.quantity}</TableCell>
                                     </TableRow>

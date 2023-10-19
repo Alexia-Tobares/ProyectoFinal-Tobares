@@ -24,7 +24,7 @@ const greeting = '¡Bienvenido/a a Stay Strong!'
             <Route exact path="/productos" element={<ProductList />} />
             <Route exact path="/categorias" element={<Categorias />} />
             <Route exact path="/categoria/:categoriaId" element={<CategoriesProductList />} />
-            <Route exact path="/cart" element={<Cart />} />
+            <Route exact path="/Cart" element={<Cart />} />
           </Routes>
         </Router>
     </CartProvider>

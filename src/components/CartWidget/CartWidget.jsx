@@ -6,7 +6,7 @@ const CartWidget = () => {
 
     console.log(cart)
     return (
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center"}}>
             <ShoppingCartIcon />
             <Typography>{cart.items.length}</Typography>
         </div>

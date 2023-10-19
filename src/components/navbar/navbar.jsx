@@ -28,7 +28,10 @@ const Navbar = () =>{
             <NavLink sx={{color:'#FDF0D5'}} to="/categoria/suplementos">
                Suplementos
             </NavLink>
-            <CartWidget className='cart' />
+            <NavLink to="/Cart">
+                <CartWidget className='cart' />
+            </NavLink>
+            
             
         </Toolbar>
     </AppBar>);
