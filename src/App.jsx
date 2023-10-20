@@ -10,6 +10,7 @@ import ProductList from './components/productos/ProductList'
 import CategoriesProductList from './components/categorias/CategoriesProductList'
 import Cart from './components/Cart/Cart'
 import CartProvider from './context/CartContext'
+import CheckOut from './components/CheckOut/CheckOut'
 
 
 function App() {
@@ -25,6 +26,7 @@ const greeting = '¡Bienvenido/a a Stay Strong!'
             <Route exact path="/categorias" element={<Categorias />} />
             <Route exact path="/categoria/:categoriaId" element={<CategoriesProductList />} />
             <Route exact path="/Cart" element={<Cart />} />
+            <Route exact path="/Cart/checkout" element={<CheckOut/>}/>
           </Routes>
         </Router>
     </CartProvider>

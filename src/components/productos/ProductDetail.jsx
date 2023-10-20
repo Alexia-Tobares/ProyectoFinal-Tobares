@@ -19,7 +19,7 @@ const ProductDetail = ({ producto, children }) => {
                 <CardContent className="card-products-content">
                     <Typography>{tittle}</Typography>
                     <Typography style={{color:"gray"}}>{category}</Typography>
-                    <Typography>${price.toFixed(2)}</Typography>
+                    <Typography>${price}</Typography>
                 </CardContent>
             </Card>
 

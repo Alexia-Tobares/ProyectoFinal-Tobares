@@ -15,7 +15,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         }
     };
 
-    //agrego al carrito
     const handleAddToCart = () => {
         if (count > 0) {
             onAdd(count);

@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    Button,
     Link,
     Paper,
     Table,
@@ -11,16 +12,14 @@ import {
     Typography,
 } from "@mui/material";
 import { useCartContext } from "../../context/CartContext";
-import { NavLink } from "react-router-dom";
 
 const Cart = () => {
-    const { cart } = useCartContext();
-
+    const {cart} = useCartContext()
     return (
-        <div className="container" style={{marginTop:"150px"}}>
+        <div className="container" style={{margin:"150px"}}>
             <Paper elevation={3}>
                 <Typography variant="h6" component="div" align="center" sx={{ p: 2 }}>
-                    Cart
+                    Tu carrito
                 </Typography>
                 {cart.items.length === 0 ? (
                     <Typography variant="body2" align="center" sx={{ p: 2 }}>
@@ -47,9 +46,14 @@ const Cart = () => {
                                     </TableRow>
                                 ))}
                                 <TableRow>
-                                    <TableCell colSpan={3}>Total:</TableCell>
+                                    <TableCell colSpan={3}>Monto total:</TableCell>
                                     <TableCell>${cart.total.toFixed(2)}</TableCell>
                                 </TableRow>
+                                <Link to="/Cart/checkout" className='checkoutButton'>
+                                    <Button sx={{ marginTop: '30px' }} variant="contained" color='secondary'>
+                                        Finalizar Compra
+                                    </Button>
+                                </Link>
                             </TableBody>
                         </Table>
                     </TableContainer>
