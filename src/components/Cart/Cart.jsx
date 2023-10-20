@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    Link,
     Paper,
     Table,
     TableBody,
@@ -10,6 +11,7 @@ import {
     Typography,
 } from "@mui/material";
 import { useCartContext } from "../../context/CartContext";
+import { NavLink } from "react-router-dom";
 
 const Cart = () => {
     const { cart } = useCartContext();
